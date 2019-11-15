@@ -8,8 +8,9 @@ namespace MiniCursoAspNet
         static void Main(string[] args)
         {
             var leao = new Leao("caramelo", "mufasa");
-            var informacoesEntrada = new CoordenaçãoZoo.ServicosZoo().ContabiliarEntradaLeao(leao);
-            Console.WriteLine(informacoesEntrada);
+
+            var resultado = new DAO.Zoo.DAOLeao().CadastrarLeao(leao);
+            Console.WriteLine(resultado);
             Console.ReadLine();
         }
     }
