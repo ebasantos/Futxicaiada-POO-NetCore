@@ -7,5 +7,6 @@ namespace Jaulas
         public string Nome { get; set; }
         public DateTime DataEntrada { get; set; }
         public int NumeroJaula { get; set; }
+        public string Especie { get; set; }
     }
 }

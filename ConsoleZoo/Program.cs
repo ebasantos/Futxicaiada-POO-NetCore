@@ -9,9 +9,13 @@ namespace MiniCursoAspNet
         {
             var leao = new Leao("caramelo", "mufasa");
 
-            var resultado = new DAO.Zoo.DAOLeao().CadastrarLeao(leao);
+            //INSERINDO ANIMAL DO BANCO DE DADOS
+            var resultado = new DAO.Zoo.DAOLeao().Cadastrar(leao);
             Console.WriteLine(resultado);
             Console.ReadLine();
+
+            //LISTANDO TODOS AS JAULAS 
+            new DAO.Zoo.DAOLeao().Listar();
         }
     }
 }
